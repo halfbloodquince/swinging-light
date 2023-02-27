@@ -1,6 +1,11 @@
+import { useState } from "react";
 import "./Light.css";
 
 export default function () {
+  const [on, setOn] = useState<Boolean>(false)
+  const handleClick = () => {
+    setOn(!on)
+  }
   return (
     <div className="Light">
       <div className="light--container">
@@ -12,7 +17,7 @@ export default function () {
           xmlns="http://www.w3.org/2000/svg"
         >
           <g filter="url(#filter0_d_1_13)">
-            <path
+            <path style={{display: on ? "block" : "none"}}
               d="M518 487C518 561.558 373.959 594 262.674 594C151.389 594 4 566.558 4 492C4 417.442 151.389 261 262.674 261C373.959 261 518 412.442 518 487Z"
               fill="url(#paint0_radial_1_13)"
             />
@@ -67,7 +72,7 @@ export default function () {
               gradientTransform="translate(261 226) rotate(84.8193) scale(376.538 430.329)"
             >
               <stop />
-              <stop
+              <stop className="light--color"
                 offset="0.277766"
                 stop-color="#FF9A02"
                 stop-opacity="0.541899"
@@ -78,6 +83,7 @@ export default function () {
         </svg>
       </div>
       <div className="text">FRONT END DEVELOPMENT IS HARD</div>
+      <button className="click--me" onClick={handleClick} style={{backgroundColor: on ? "red" : "#313030"}}></button>
     </div>
   );
 }

@@ -46,3 +46,60 @@
     -webkit-text-stroke: 2px rgb(0, 0, 0);
     -webkit-text-fill-color: rgba(254, 251, 251, 0.02);
 }
+
+.click--me {
+    width: 20px;
+    height: 20px;
+    background-color: #313030;
+    position: absolute;
+    top: 50%;
+    left:75%;
+    border: none;
+    cursor:pointer;
+    color: #d24b4b;
+
+}
+
+.click--me:hover {
+    
+    background-color: aliceblue;
+}
+
+.light--color {
+    /* stop-color: #f9c22a; */
+    stop-opacity: 0.54;
+    animation: flicker 3s linear infinite;
+}
+
+@keyframes flicker {
+
+    0% {
+    /* stop-color: #f9c22a; */
+    stop-opacity: 0.54;
+    }
+    20% {
+    /* stop-color: #dd7b25; */
+    stop-opacity: 0.74;
+    }
+   40% {
+    /* stop-color: #f9c22a; */
+    stop-opacity: 0.66;
+    }
+    60% {
+    /* stop-color: #f9c22a; */
+    stop-opacity: 0.54;
+    }
+    70% {
+     /* stop-color: #f9c22a; */
+     stop-opacity: 0.66;
+     }
+    80% {
+    /* stop-color: #f9c22a; */
+    stop-opacity: 0.54;
+    }
+    100% {
+    /* stop-color: #f9c22a; */
+    stop-opacity: 0.55;
+    }
+    
+}
