@@ -69,7 +69,7 @@ export default function () {
               cy="0"
               r="1"
               gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(261 226) rotate(84.8193) scale(376.538 430.329)"
+              gradientTransform="translate(261 226) rotate(84.8193) scale(476.538 490.329)"
             >
               <stop />
               <stop className="light--color"
