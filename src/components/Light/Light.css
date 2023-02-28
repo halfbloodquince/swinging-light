@@ -60,6 +60,13 @@
 
 }
 
+.click--me--img {
+    width: 70px;
+    position:absolute;
+    left:80%;
+    cursor:pointer;
+}
+
 .click--me:hover {
     
     background-color: aliceblue;
@@ -103,3 +110,4 @@
     }
     
 }
+
